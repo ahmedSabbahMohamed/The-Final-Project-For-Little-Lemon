@@ -1,12 +1,14 @@
 function TestimonialsCards (props) {
     return (
         <div className="Testimonials-card">
-            <h1>Rating</h1>
+            <div className="rating">
+                <span>{props.star}</span>
+            </div>
             <div className="person">
                 <img src={props.image} alt="person" />
-                <h1>{props.name}</h1>
+                <p>{props.name}</p>
             </div>
-            <h1>review text</h1>
+            <p>{props.reviewText}</p>
         </div>
     );
 }

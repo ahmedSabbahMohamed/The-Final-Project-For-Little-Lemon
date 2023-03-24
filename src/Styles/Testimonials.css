@@ -1,0 +1,44 @@
+.testimonials {
+    background-color: var(--highlight-1);
+    margin-top: 30pt;
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+}
+
+.testimonials > h1 {
+    text-align: center;
+    color: var(--primary-1);
+}
+
+.testimonials p {
+    font-size: 16pt;
+    font-family: 'karla';
+}
+
+.four-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20pt;
+    margin: 0 auto;
+}
+
+.rating span {
+    display: flex;
+    width: 30px;
+    padding-bottom: 5pt;
+}
+
+.person {
+    border: 1px solid var(--primary-1);
+    display: flex;
+    align-items: center;
+}
+
+.person img {
+    display: block;
+    width: 100px;
+}
+
+.Testimonials-card p {
+    padding-left: 5pt;
+}

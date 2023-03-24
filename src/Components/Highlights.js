@@ -1,13 +1,14 @@
 import Card from "./Card";
 import greekSalad from '../Assets/icons-logo/greekSalad.jpg';
-import bruchetta from '../Assets/icons-logo/bruchetta.svg';
+import bruchetta from '../Assets/icons-logo/bruchetta.jpg';
 import lemonDessert from '../Assets/icons-logo/lemonDessert.jpg';
+import '../Styles/Highlights.css';
 
 function Highlights () {
     return (
-        <section>
+        <section className="highlights">
             <div className="container">
-                <div className="hightligths-head">
+                <div className="highlights-head">
                     <h1>Specials</h1>
                     <button>Online Menu</button>
                 </div>

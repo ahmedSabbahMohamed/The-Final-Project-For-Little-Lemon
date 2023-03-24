@@ -1,0 +1,41 @@
+footer {
+    background-color: var(--highlight-2);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30pt;
+    padding-top: 30pt;
+}
+
+.footer-nav li a {
+    color: var(--highlight-1);
+    display: inline-block;
+    padding: 5pt;
+}
+
+.footer-nav li:first-child a {
+    color: var(--secondary-1);
+    font-weight: bold;
+}
+
+.footer-social li:not(:first-child) {
+    display: inline-block;
+}
+
+.footer-social li:first-child a {
+    color: var(--secondary-1);
+    font-weight: bold;
+}
+
+.footer-social li:not(:first-child) a {
+    color: var(--highlight-1);
+    display: inline-block;
+    padding: 5pt;
+    margin-top: 5pt;
+}
+
+.footer-nav li:not(:first-child) a:hover,.footer-social li:not(:first-child) a:hover {
+    color: var(--primary-2);
+}

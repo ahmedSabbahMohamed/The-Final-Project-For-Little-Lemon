@@ -12,9 +12,41 @@
   --highlight-2: #333333;
 }
 
+.container {
+  max-width: 909pt;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20pt;
+  padding-right: 20pt;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+button {
+  padding: 10pt 15pt;
+  color: var(--highlight-2);
+  background-color: var(--primary-2);
+  border: 2pt solid var(--primary-2);
+  border-radius: 16pt;
+  font-size: 18pt;
+  font-family: 'karla';
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--primary-2);
+  transform: scale(1.1);
 }
 
 body {
@@ -45,7 +77,8 @@ main {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 40pt;
+  font-family: 'Markazi';
   margin: 0.67em 0;
 }
 
@@ -62,6 +95,9 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  font-size: 18pt;
+  font-family: 'karla';
 }
 
 abbr[title] {
@@ -112,7 +148,7 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
+  /* font-size: 100%; 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }

@@ -1,0 +1,54 @@
+.hero {
+    background-color: var(--primary-1);
+    padding: 20pt 0;
+}
+
+.about {
+    background-color: var(--secondary-1);
+    padding: 20pt 0;
+}
+
+.about button {
+    display: none;
+}
+
+.hero-about-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-about-cont .hero-about-image img {
+    width: 375pt;
+    height: 325pt;
+    border-radius: 16pt;
+}
+
+.hero-about-cont .desc {
+    max-width: 422pt;
+}
+
+.hero-about-cont .desc h1 {
+    color: var(--primary-2);
+}
+
+small {
+    display: block;
+    color: var(--highlight-1);
+    font-weight: 500;
+}
+
+.hero-about-cont .desc p {
+    color: var(--highlight-1);
+    font-family: "karla";
+    font-size: 18pt;
+}
+
+@media (max-width: 700pt) {
+    .hero-about-cont {
+        flex-direction: column-reverse;
+    }
+    .hero-about-cont .desc {
+        text-align: center;
+    }
+}

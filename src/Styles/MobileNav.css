@@ -1,0 +1,28 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background-color: var(--highlight-2);
+    transition: all .4s ease;
+}
+
+.mobile-nav li a {
+    color: var(--highlight-1);
+    display: inline-block;
+    padding: 5pt 10pt;
+}
+
+.mobile-nav li a:hover {
+    color: var(--primary-2);
+}
+
+.mobile-nav li {
+    text-align: center;
+}
+
+.mobile-nav li:first-child {
+    text-align: right;
+    padding: 10pt;
+}
