@@ -3,7 +3,6 @@ import heroImage from '../Assets/icons-logo/heroImage.jpg';
 import Highlights from "./Highlights";
 import Testimonials from "./Testimonials";
 import About from '../Assets/icons-logo/About.jpg';
-import MobileNav from "./MobileNav";
 
 function Home () {
     return (
@@ -12,7 +11,6 @@ function Home () {
             <Highlights />
             <Testimonials />
             <HeroAbout heroOrAbout="about" paragraph="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit." image={About} />
-            <MobileNav />
         </>
     );
 }

@@ -1,4 +1,5 @@
 import '../Styles/HeroAbout.css';
+import { Link } from 'react-router-dom';
 
 function HeroAbout (props) {
     return (
@@ -11,7 +12,7 @@ function HeroAbout (props) {
                             <small>Egypt</small>
                         </h1>
                         <p>{props.paragraph}</p>
-                        <button>Reserve a Table</button>
+                        <button><Link className='btn' to="reservation-form">Reserve a Table</Link></button>
                     </div>
                     <div className="hero-about-image">
                         <img src={props.image} alt="hero&about" />

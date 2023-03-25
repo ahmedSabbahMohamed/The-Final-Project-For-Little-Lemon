@@ -24,5 +24,6 @@
 
 .mobile-nav li:first-child {
     text-align: right;
-    padding: 10pt;
+    padding: 25pt;
+    cursor: pointer;
 }

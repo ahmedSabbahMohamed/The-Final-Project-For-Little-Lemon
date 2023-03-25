@@ -17,7 +17,7 @@ footer {
 
 .footer-nav li:first-child,.footer-social li:first-child {
     color: var(--secondary-1);
-    font-weight: bolder;
+    font-weight: bold;
     font-family: 'karla';
     font-size: 20pt;
 }

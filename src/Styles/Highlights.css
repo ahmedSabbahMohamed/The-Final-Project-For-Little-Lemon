@@ -65,10 +65,8 @@
     color: var(--primary-1);
 }
 
-.card-foot a {
-    font-family: 'Markazi';
-    font-size: 18pt;
-    color: inherit;
+.card-foot h1 {
+    padding: 15pt 0;
 }
 
 @media (max-width: 500px) {

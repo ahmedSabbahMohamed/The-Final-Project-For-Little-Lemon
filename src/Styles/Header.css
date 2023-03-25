@@ -42,12 +42,13 @@
     color: var(--primary-2);
 }
 
-@media (max-width: 700pt) {
+@media (max-width: 1046px) {
     .header-nav li {
         display: none;
     }
 
     .header-nav li:last-child {
         display: block;
+        cursor: pointer;
     }
 }

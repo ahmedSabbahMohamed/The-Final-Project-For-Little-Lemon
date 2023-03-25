@@ -42,3 +42,9 @@
 .Testimonials-card p {
     padding-left: 5pt;
 }
+
+@media (max-width: 400px) {
+    .testimonials > h1 {
+        font-size: 30pt;
+    }
+}

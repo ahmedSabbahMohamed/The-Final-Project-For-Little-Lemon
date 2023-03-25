@@ -4,9 +4,6 @@ import '../Styles/BookingForm.css';
 function BookingForm (props) {
     //color
     var red = "hsl(0, 94%, 66%)";
-    //reservation
-    var times = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-    const [availableTimes, setAvailableTimes] = useState(times);
     //validate name
     const [name, setName] = useState("");
     var validName = /[a-z]/ig;
@@ -20,6 +17,7 @@ function BookingForm (props) {
     const [date, setDate] = useState("");
     //validate number of guests
     const[guest, setGuests] = useState("");
+    var validNum = /[1-9]/;
     const submitHandler = (e) => {
         e.preventDefault();
         let error = document.querySelectorAll("label .error");
@@ -51,7 +49,7 @@ function BookingForm (props) {
             document.querySelector("#date").style.border = "1px solid gray";
             error[3].style.display = "none";
         }
-        if (guest === "") {
+        if (guest === "" || !validNum.test(guest)) {
             document.querySelector("#guests").style.border = `1px solid ${red}`;
             error[4].style.display = "block";
         } else {
@@ -83,16 +81,19 @@ function BookingForm (props) {
                 </label>
                 <input type="date" id="date" onChange={e => setDate(e.target.value)} />
                 <label htmlFor="time">Choose Time:</label>
-                <select id="time" onChange={e => setAvailableTimes(e.target.value)}>
-                    {
-                        availableTimes.map(time => (<option key={time} value={time}>{time}</option>))
-                    }
+                <select id="time">
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                    <option>20:00</option>
+                    <option>21:00</option>
+                    <option>22:00</option>
                 </select>
                 <label htmlFor="guests">
                     <span>Number of guests:</span>
                     <span className="error">There is no guests</span>
                 </label>
-                <input type="number" id="guests" placeholder="2" max="10" min="1" onChange={e => setGuests(e.target.value)} />
+                <input type="text" id="guests" placeholder="2" max="10" min="1" onChange={e => setGuests(e.target.value)} />
                 <label htmlFor="occasion">occasion:</label>
                 <select id="occasion">
                     <option>Birthday</option>

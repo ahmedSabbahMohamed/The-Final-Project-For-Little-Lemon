@@ -15,7 +15,7 @@ function Card (props) {
             <p>{props.cardDesc}</p>
         </div>
         <div className="card-foot">
-            <h1><a href='/' role="button">Order a Delivery    <MdDeliveryDining /></a></h1>
+            <h1>Order a Delivery    <MdDeliveryDining /></h1>
         </div>
         </div>
     </div>
