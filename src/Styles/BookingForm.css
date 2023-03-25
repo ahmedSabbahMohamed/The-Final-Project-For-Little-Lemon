@@ -1,0 +1,80 @@
+label,input,select {
+    display: block;
+    width: calc(100% - 15pt);
+    padding: 8pt;
+    font-family: 'karla';
+    font-size: 16pt;
+    color: var(--primary-1);
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    padding: 5pt;
+}
+
+select {
+    width: 100%;
+    background-color: white;
+    border-radius: 16pt;
+    border: 1px solid var(--primary-1);
+}
+
+label .error {
+    color: var(--red);
+    display: none;
+}
+
+input {
+    border-radius: 16pt;
+    border: 1px solid var(--primary-1);
+    margin: 5pt;
+    background-color: white;
+}
+
+form {
+    position: relative;
+    max-width: 540pt;
+    margin: 30pt auto;
+    display: grid;
+    place-items: center;
+    background-color: var(--highlight-1);
+    padding: 15pt;
+}
+
+form button {
+    margin-top: 20pt;
+    margin-bottom: 10pt;
+}
+
+form .square {
+    background-color: var(--highlight-2);
+    width: 280pt;
+    height: 650pt;
+    position: absolute;
+    right: -20pt;
+    z-index: -1;
+}
+
+form .animate {
+    background-color: var(--secondary-1);
+    width: 250pt;
+    height: 250pt;
+    position: absolute;
+    left: -45pt;
+    top: 250pt;
+    z-index: -1;
+    animation: rotate infinite 20s linear;
+}
+
+@keyframes rotate {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+
+@media (max-width: 450px) {
+    form .square {
+        width: 200pt;
+        right: -15pt;
+    }
+}

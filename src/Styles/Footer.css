@@ -15,18 +15,15 @@ footer {
     padding: 5pt;
 }
 
-.footer-nav li:first-child a {
+.footer-nav li:first-child,.footer-social li:first-child {
     color: var(--secondary-1);
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: 'karla';
+    font-size: 20pt;
 }
 
 .footer-social li:not(:first-child) {
     display: inline-block;
-}
-
-.footer-social li:first-child a {
-    color: var(--secondary-1);
-    font-weight: bold;
 }
 
 .footer-social li:not(:first-child) a {

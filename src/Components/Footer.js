@@ -4,6 +4,7 @@ import {CiFacebook} from 'react-icons/ci';
 import {CiTwitter} from 'react-icons/ci';
 import {AiOutlineInstagram} from 'react-icons/ai';
 import '../Styles/Footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer () {
     return (
@@ -13,9 +14,9 @@ function Footer () {
                     <div className="footer-logo">
                         <img src={footerLogo} alt="logo" />
                     </div>
-                    <Nav class="footer-nav" one="Doormat Nav Igation" two="Home" three="About" four="Menu" five="Reservations" six="Order Online" seven="Login" />
-                    <Nav class="footer-nav" one="Contact" two="Adress" three="Phone Number" four="Email" />
-                    <Nav class="footer-social" one="Social Media Links" two={<CiFacebook />} three={<CiTwitter/>} four={<AiOutlineInstagram />} />
+                    <Nav class="footer-nav" one="Doormat Nav Igation" two={<Link to="/">Home</Link>} three={<a href='/'>About</a>} four={<a href='/'>Menu</a>} five={<Link to="/reservation-form">Reservations</Link>} six={<a href='/'>Order Online</a>} seven={<a href='/'>Login</a>} />
+                    <Nav class="footer-nav" one="Contact" two={<a href='/'>Adress</a>} three={<a href='/'>Phone Number</a>} four={<a href='/'>Email</a>} />
+                    <Nav class="footer-social" one="Social Media Links" two={<a href='/'><CiFacebook /></a>} three={<a href='/'><CiTwitter/></a>} four={<a href='/'><AiOutlineInstagram /></a>} />
                 </div>
             </div>
         </footer>

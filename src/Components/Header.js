@@ -2,6 +2,7 @@ import logoHeader from '../Assets/icons-logo/Logo.svg';
 import Nav from './Nav';
 import burgerMenu from '../Assets/icons-logo/burgerMenu.svg';
 import '../Styles/Header.css';
+import { Link } from 'react-router-dom';
 
 function Header () {
     const openMobileNav = (e) => {
@@ -16,10 +17,10 @@ function Header () {
                     <img src={logoHeader} alt="logo" />
                     </a>
                 </div>
-                <Nav class="header-nav" one="Home" two="About" three="Menu" four="Reservations" five="OrderOnline" six="LogIn"
+                <Nav class="header-nav" one={<Link to="/">Home</Link>} two={<a href='/'>About</a>} three={<a href='/'>Menu</a>} four={<Link to="/reservation-form">Reservations</Link>} five={<a href='/'>Order Online</a>} six={<a href='/'>Login</a>}
                     seven={<img src={burgerMenu} alt="menu"
                     onClick={openMobileNav}
-                    />}
+                        />}
                 />
             </div>
         </header>

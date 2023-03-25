@@ -10,6 +10,7 @@
   --secondary-2: #FBDABB;
   --highlight-1: #EDEFEE;
   --highlight-2: #333333;
+  --red: hsl(0, 94%, 66%);
 }
 
 .container {
