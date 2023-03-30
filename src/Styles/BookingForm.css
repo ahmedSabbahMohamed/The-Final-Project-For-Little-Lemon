@@ -77,4 +77,12 @@ form .animate {
         width: 200pt;
         right: -15pt;
     }
+    form .animate {
+        width: 200pt;
+        height: 200pt;
+        top: 300pt;
+    }
+    form .submit {
+        font-size: 16pt;
+    }
 }
